@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Add Employees</title>
+</head>
+<body>
+    
+    <div class="add-employee-main-header">
+        <header>
+            <h1>Add Employees</h1>
+        </header>
+    </div>
+
+    <div class="add-employee-form">
+        <form id="employee-form">
+            <label for="employee-name"> <strong>Name:</strong>  </label>
+            <input type="text" id="employee-name" placeholder="Please Enter Your Name" required>
+            <br>
+            <br>
+
+            <label for="employee-address"> <strong> Address: </strong> </label>
+            <textarea id="employee-address" placeholder="Please Enter Your Address"></textarea>
+            <br>
+            <br>
+
+            <label for="employee-phone"> <strong>Phone Number:</strong> </label>
+            <input type="tel" id="employee-phone" placeholder="Please Enter Your Phone Number" required>
+            <br>
+            <br>
+
+            <label for="employee-email"> <strong> Email: </strong> </label>
+            <input type="email" id="employee-email" placeholder="Please Enter Your Email" required>
+            <br>
+            <br>
+
+            <label for="employee-job-title"> <strong> Job Title: </strong></label>
+            <input type="text" id="employee-job-title" placeholder="Please Enter Your Job Title" required>
+            <br>
+            <br>
+
+            <label for="employee-salary"> <strong> Salary: </strong></label>
+            <input type="number" id="employee-salary" placeholder="Please Enter Your Salary" required>
+            <br>
+            <br>
+
+            <label for="employee-photo"> <strong>Photo: </strong></label>
+            <input type="file" id="employee-photo" title="Please Add Your Photo">
+            <br>
+            <br>
+
+            <button type="button" id="employee-submit-button" title="Click here to submit employee form!"> <strong> Submit </strong></button>
+            <br>
+            <br>
+            
+        </form>
+    </div>
+
+    <div id="go-back-button">
+        <a href="employees.html" title="Click here to get back to the home page!"> <strong> Go back </strong></a>
+    </div>
+
+    <script src="js/addEmployees.js"></script>
+</body>
+</html>
