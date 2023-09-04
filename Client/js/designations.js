@@ -2,6 +2,11 @@ const API_BASE_URL = "http://localhost:8081";
 const API_DESIGNATIONS_URL = "http://localhost:8081/api/designations";
 
 document.addEventListener("DOMContentLoaded", () => {
+    const goBackButton = document.getElementById("go-back-button");
+    goBackButton.addEventListener("click", goBack);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     const designationContainer = document.getElementById("designation-list");
 
     // Fetch designations
@@ -21,4 +26,8 @@ function createDesignationCard(designation) {
             <p>${designation.description || 'No description available'}</p>
         </div>
     `;
+}
+
+function goBack() {
+    window.location.href = "index.html"; // Redirect to the main page
 }

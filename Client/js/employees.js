@@ -2,6 +2,11 @@ const API_BASE_URL = "http://localhost:8081";
 const API_EMPLOYEES_URL = "http://localhost:8081/api/employees";
 
 document.addEventListener("DOMContentLoaded", () => {
+    const goBackButton = document.getElementById("go-back-button");
+    goBackButton.addEventListener("click", goBack);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     const employeeContainer = document.getElementById("employee-list");
     console.log(employeeContainer);
     // Fetch employees
@@ -28,4 +33,8 @@ function createEmployeeCard(employee) {
             ${employee.photo ? `<img src=http://localhost:8081/${employee.photo} alt="${employee.name} Photo">` : ''}
         </div>
     `;
+}
+
+function goBack() {
+    window.location.href = "index.html"; // Redirect to the main page
 }
