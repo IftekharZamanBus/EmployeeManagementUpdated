@@ -75,7 +75,8 @@ async function connectToDB() {
             host: db_hostname,
             database: db_database,
             password: db_password,
-            port: db_port
+            port: db_port,
+            ssl: db_ssl
         })
     
         await client.connect();
