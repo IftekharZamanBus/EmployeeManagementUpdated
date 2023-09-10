@@ -1,61 +1,58 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Employees</title>
-</head>
-<body>
-    
-    <section id="employees">
-        <div class="employee-header">
-            <header>
-                <h2>Employees</h2>
-                <div id="employee-list" class="card-container"></div>
-            </header>
-        </div>
-    </section>
-
-    <div class="add-employee-page-button">
-        <a class="add-employees-button" href="addEmployees.html" title="Click here to add Employees!"><strong>Add Employees</strong></a>
-    </div>
-
-    <br>
-
-    <div id="go-back-button">
-        <a href="index.html" title="Click here to get back to the home page!"> <strong> Go back </strong></a>
-    </div>
-
-    <script src="js/employees.js"></script>
-
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Custom CSS for image container */
+        .img-container {
+            max-width: 200px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+        /* Custom CSS for centered content in employee cards */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Custom CSS to limit the image maximum width */
+        .img-max-width {
+            max-width: 100px; /* Adjust the maximum width as needed */
+        }
+
+        .card {
+            margin-bottom: 20px;
+            min-width: 200px;
+        }
+    </style>
     <title>Employees</title>
 </head>
 <body>
-
+    
     <div class="container mt-5">
         <header class="text-center">
             <h2 class="display-4">Employees</h2>
         </header>
     </div>
 
-    <div class="container mt-4 text-center">
-        <a href="addEmployees.html" class="btn btn-primary" title="Click here to add Employees!">Add Employees</a>
-        <a href="index.html" class="btn btn-secondary" title="Click here to get back to the home page!">Go back</a>
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <a href="addEmployees.html" class="btn btn-success" title="Click here to add Employees!"><strong>Add Employees</strong></a>
+            <a href="index.html" class="btn btn-secondary" title="Click here to get back to the home page!"><strong>Go back</strong></a>
+        </div>
     </div>
 
     <div class="container mt-4">
         <div id="employee-list" class="card-container">
-            <!-- Cards for employees can be added here -->
+            <!-- Employee cards can be added here with the employee-card class -->
+            <div class="card employee-card">
+            </div>
+
+            <!-- Add more employee cards as needed -->
         </div>
     </div>
 
