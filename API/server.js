@@ -41,6 +41,7 @@ let db_username;
 let db_database;
 let db_password;
 let db_port;
+let db_ssl;
 
 if(process.env.NODE_ENV === "development") {
     db_hostname = process.env.LOCALDB_HOST;
@@ -48,12 +49,14 @@ if(process.env.NODE_ENV === "development") {
     db_database = process.env.LOCALDB_DATABASE;
     db_password = process.env.LOCALDB_PASSWORD;
     db_port = process.env.LOCALDB_PORT;
+    db_ssl = false;
 } else {
     db_hostname = process.env.PRODDB_HOST;
     db_username = process.env.PRODDB_USER;
     db_database = process.env.PRODDB_DATABASE;
     db_password = process.env.PRODDB_PASSWORD;
     db_port = process.env.PRODDB_PORT;
+    db_ssl = true;
 }
 
 const pool = new Pool ({
@@ -61,7 +64,8 @@ const pool = new Pool ({
     host: db_hostname,
     database: db_database,
     password: db_password,
-    port: db_port
+    port: db_port,
+    ssl: db_ssl
 })
 
 async function connectToDB() {
