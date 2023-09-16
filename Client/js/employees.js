@@ -1,9 +1,7 @@
-const API_BASE_URL = "http://localhost:8081";
-const API_EMPLOYEES_URL = "http://localhost:8081/api/employees";
+const API_EMPLOYEES_URL = `${BASE_API_URL}/api/employees`;
 
 document.addEventListener("DOMContentLoaded", () => {
     const goBackButton = document.getElementById("go-back-button");
-    goBackButton.addEventListener("click", goBack);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +28,7 @@ function createEmployeeCard(employee) {
             <p>Job Title: ${employee.jobtitle || 'N/A'}</p>
             <p>Salary: ${employee.salary || 'N/A'}</p>
 
-            ${employee.photo ? `<img src=http://localhost:8081/${employee.photo} alt="${employee.name} Photo">` : ''}
+            ${employee.photo ? `<img src=${BASE_API_URL}/${employee.photo} alt="${employee.name} Photo">` : ''}
         </div>
     `;
 }

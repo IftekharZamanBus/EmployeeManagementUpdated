@@ -32,7 +32,7 @@ function createEmployee() {
     formData.append("salary", salary);
     formData.append("photo", photoInput.files[0]);
 
-    fetch("http://localhost:8081/api/employees", {
+    fetch(`${BASE_API_URL}/api/employees`, {
         method: "POST",
         body: formData,
     })

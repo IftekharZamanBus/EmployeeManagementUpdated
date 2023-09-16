@@ -15,7 +15,7 @@ function createDesignation() {
         description: description
     };
 
-    fetch("http://localhost:8081/api/designations", {
+    fetch(`${BASE_API_URL}/api/designations`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

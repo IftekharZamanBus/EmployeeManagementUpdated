@@ -1,9 +1,7 @@
-const API_BASE_URL = "http://localhost:8081";
-const API_DESIGNATIONS_URL = "http://localhost:8081/api/designations";
+const API_DESIGNATIONS_URL = `${BASE_API_URL}/api/designations`;
 
 document.addEventListener("DOMContentLoaded", () => {
     const goBackButton = document.getElementById("go-back-button");
-    goBackButton.addEventListener("click", goBack);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
