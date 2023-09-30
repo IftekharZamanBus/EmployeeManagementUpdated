@@ -13,6 +13,24 @@ This is my EmployeeManagementUpdated Project, in this we can add employees with 
 
 - **Backend (server.js, package.json, package-lock.json, .gitignore, .env.development, .env, node_modules (folder), images (folder))**
 
+- **Express**
+
+- **path**
+
+- **multer**
+
+- **Pool**
+
+- **Cors**
+
+- **mimetype**
+
+- **GET**
+
+- **POST**
+
+- **DELETE**
+
 ### Functionality (JavaScript)
 
 - **home.js - console.log's the hostname.**
